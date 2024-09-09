@@ -1,0 +1,12 @@
+Summary of Important Directories:
+1. / – Root directory, base of the file system.
+2. /bin & /sbin – Essential binaries and system binaries.
+3. /etc – Configuration files.
+4. /home – User directories.
+5. /lib – Shared libraries.
+6. /usr – User binaries, libraries, and local software.
+7. /var – Variable data like logs and spools. 
+8. /tmp – Temporary files.
+9. /dev – Device files.
+10. /proc & /sys – System information.
+11. /boot – Bootloader files.

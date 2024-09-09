@@ -1,0 +1,44 @@
+Key Utilities in procps:
+1. ps: display information about running processess
+   Example: ps aux shows detailed information about all running processes.
+   
+2.top: Provides a dynamic, real-time view of running processes, including CPU and memory usage
+  Example: Run top to see a live update of system resource consumption.
+
+3.free: Displays information about memory usage (RAM and swap)
+  Example: free -h shows the amount of free and used memory in a human-readable format.
+  
+4.uptime: Shows how long the system has been running, the number of users, and the system load averages.
+  Example: uptime gives you the system's uptime and current load averages.
+
+5.kill: Sends signals to processes, typically used to terminate them.
+  Example: kill -9 <pid> forcefully terminates a process with a given process ID.
+
+6.pmap: Displays memory map of a process.
+  Example: pmap <pid> shows memory usage of the specified process ID.
+
+7.vmstat: Reports information about processes, memory, paging, block IO, traps, and CPU activity
+  Example: vmstat 1 gives a summary of system performance updated every second.
+
+8.sysctl: Allows kernel parameters to be queried and modified at runtime.
+  Example: sysctl -a shows all available kernel parameters.
+
+9.pidof: Finds the process IDs of a running program.
+  Example: pidof nginx returns the PID(s) of all running nginx processes
+
+10.watch: Executes a program periodically, showing its output
+   Example: watch df -h shows periodic updates of disk usage.
+
+Common Use Cases of procps Tools:
+1.Monitoring System Performance: Tools like top, vmstat, and free help in monitoring CPU, memory, and system load in real time.
+2.Process Management: ps, kill, and pidof are used for managing processes, identifying hung tasks, and terminating misbehaving processes.
+3.Memory Usage Analysis: pmap and free help in analyzing memory usage by individual processes or by the entire system.
+4.Uptime and Load: uptime and vmstat are used to check how long the system has been up and the load on the system.
+
+Example of the /proc File System:
+The /proc directory contains pseudo-files that provide information about system processes and hardware. For instance:
+1./proc/cpuinfo: Contains information about the CPU, such as cores, architecture, and processor flags.
+2./proc/meminfo: Displays memory-related information such as total memory, free memory, and buffers
+3./proc/[pid]: Each running process has a directory under /proc with its PID, containing information about that specific process (like /proc/1234 for a process with PID 1234).
+
+  
